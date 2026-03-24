@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnAdmin"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Botón Administrador -->
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Administrador"
+        android:textSize="16sp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="irAdmin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón Usuario -->
+    <Button
+        android:id="@+id/btnUsuario"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Usuario"
+        android:textSize="16sp"
+        android:backgroundTint="#673AB7"
+        android:onClick="irLogin"
+        app:layout_constraintTop_toBottomOf="@id/btnAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

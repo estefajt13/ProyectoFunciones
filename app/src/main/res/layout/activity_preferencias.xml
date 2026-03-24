@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Preferencias"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp1"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Comida italiana" android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp2"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Comida japonesa" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp3"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Música pop" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp4"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Música rock" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp5"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Películas de acción" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp6"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Películas de terror" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp7"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Deportes al aire libre" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp8"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Gimnasio" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp9"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Redes sociales" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <CheckBox android:id="@+id/cbp10"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Trabajo remoto" android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button android:id="@+id/btnGuardarPref"
+            android:layout_width="0dp" android:layout_height="55dp"
+            android:text="Guardar Preferencias"
+            android:backgroundTint="#673AB7"
+            android:onClick="guardarPreferencias"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/cbp10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
