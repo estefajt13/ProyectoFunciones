@@ -62,4 +62,8 @@ public class LoginActivity extends AppCompatActivity {
         intent.putExtra("usuario", usuarioEncontrado); // pasamos el usuario logueado
         startActivity(intent);
     }
+
+    public void volver(View v) {
+        finish(); // cierra la activity actual y regresa a la anterior
+    }
 }

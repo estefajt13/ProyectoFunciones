@@ -35,7 +35,6 @@
         android:paddingEnd="8dp"
         android:text="0"
         android:textColor="#000000"
-
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,14 +45,15 @@
         android:id="@+id/bbc"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:text="⌫ Borrar"
-        android:backgroundTint="#673AB7"
-        android:onClick="borrar"
-        app:layout_constraintTop_toBottomOf="@id/caja"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/bmemoria"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"/>
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#C17B5A"
+        android:onClick="borrar"
+        android:text="⌫ Borrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/bmemoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caja" />
 
     <Button
         android:id="@+id/bmemoria"
@@ -61,7 +61,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#009688"
+        android:backgroundTint="#5A7A8A"
         android:onClick="memoria"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
     <!-- FILA 1: 7  8  9  ÷ -->
     <Button android:id="@+id/b7"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="7" android:backgroundTint="#2196F3" android:onClick="t7"
+        android:text="7" android:backgroundTint="#4A6FA5" android:onClick="t7"
         app:layout_constraintTop_toBottomOf="@id/bbc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/b8"
@@ -79,7 +79,7 @@
 
     <Button android:id="@+id/b8"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="8" android:backgroundTint="#2196F3" android:onClick="t8"
+        android:text="8" android:backgroundTint="#4A6FA5" android:onClick="t8"
         app:layout_constraintTop_toBottomOf="@id/bbc"
         app:layout_constraintStart_toEndOf="@id/b7"
         app:layout_constraintEnd_toStartOf="@id/b9"
@@ -87,7 +87,7 @@
 
     <Button android:id="@+id/b9"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="9" android:backgroundTint="#2196F3" android:onClick="t9"
+        android:text="9" android:backgroundTint="#4A6FA5" android:onClick="t9"
         app:layout_constraintTop_toBottomOf="@id/bbc"
         app:layout_constraintStart_toEndOf="@id/b8"
         app:layout_constraintEnd_toStartOf="@id/bdivision"
@@ -95,7 +95,7 @@
 
     <Button android:id="@+id/bdivision"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="÷" android:backgroundTint="#3F51B5" android:onClick="division"
+        android:text="÷" android:backgroundTint="#7B6FA0" android:onClick="division"
         app:layout_constraintTop_toBottomOf="@id/bbc"
         app:layout_constraintStart_toEndOf="@id/b9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +104,7 @@
     <!-- FILA 2: 4  5  6  × -->
     <Button android:id="@+id/b4"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="4" android:backgroundTint="#2196F3" android:onClick="t4"
+        android:text="4" android:backgroundTint="#4A6FA5" android:onClick="t4"
         app:layout_constraintTop_toBottomOf="@id/b7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/b5"
@@ -112,7 +112,7 @@
 
     <Button android:id="@+id/b5"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="5" android:backgroundTint="#2196F3" android:onClick="t5"
+        android:text="5" android:backgroundTint="#4A6FA5" android:onClick="t5"
         app:layout_constraintTop_toBottomOf="@id/b8"
         app:layout_constraintStart_toEndOf="@id/b4"
         app:layout_constraintEnd_toStartOf="@id/b6"
@@ -120,7 +120,7 @@
 
     <Button android:id="@+id/b6"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="6" android:backgroundTint="#2196F3" android:onClick="t6"
+        android:text="6" android:backgroundTint="#4A6FA5" android:onClick="t6"
         app:layout_constraintTop_toBottomOf="@id/b9"
         app:layout_constraintStart_toEndOf="@id/b5"
         app:layout_constraintEnd_toStartOf="@id/bmultiplicacion"
@@ -128,7 +128,7 @@
 
     <Button android:id="@+id/bmultiplicacion"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="×" android:backgroundTint="#3F51B5" android:onClick="multiplicacion"
+        android:text="×" android:backgroundTint="#7B6FA0" android:onClick="multiplicacion"
         app:layout_constraintTop_toBottomOf="@id/bdivision"
         app:layout_constraintStart_toEndOf="@id/b6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,7 +137,7 @@
     <!-- FILA 3: 1  2  3  - -->
     <Button android:id="@+id/b1"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="1" android:backgroundTint="#2196F3" android:onClick="t1"
+        android:text="1" android:backgroundTint="#4A6FA5" android:onClick="t1"
         app:layout_constraintTop_toBottomOf="@id/b4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/b2"
@@ -145,7 +145,7 @@
 
     <Button android:id="@+id/b2"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="2" android:backgroundTint="#2196F3" android:onClick="t2"
+        android:text="2" android:backgroundTint="#4A6FA5" android:onClick="t2"
         app:layout_constraintTop_toBottomOf="@id/b5"
         app:layout_constraintStart_toEndOf="@id/b1"
         app:layout_constraintEnd_toStartOf="@id/b3"
@@ -153,7 +153,7 @@
 
     <Button android:id="@+id/b3"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="3" android:backgroundTint="#2196F3" android:onClick="t3"
+        android:text="3" android:backgroundTint="#4A6FA5" android:onClick="t3"
         app:layout_constraintTop_toBottomOf="@id/b6"
         app:layout_constraintStart_toEndOf="@id/b2"
         app:layout_constraintEnd_toStartOf="@id/bresta"
@@ -161,7 +161,7 @@
 
     <Button android:id="@+id/bresta"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="−" android:backgroundTint="#3F51B5" android:onClick="resta"
+        android:text="−" android:backgroundTint="#7B6FA0" android:onClick="resta"
         app:layout_constraintTop_toBottomOf="@id/bmultiplicacion"
         app:layout_constraintStart_toEndOf="@id/b3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -170,7 +170,7 @@
     <!-- FILA 4: 0  .  =  + -->
     <Button android:id="@+id/b0"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="0" android:backgroundTint="#2196F3" android:onClick="t0"
+        android:text="0" android:backgroundTint="#4A6FA5" android:onClick="t0"
         app:layout_constraintTop_toBottomOf="@id/b1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/bpunto"
@@ -178,7 +178,7 @@
 
     <Button android:id="@+id/bpunto"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="." android:backgroundTint="#2196F3" android:onClick="punto"
+        android:text="." android:backgroundTint="#4A6FA5" android:onClick="punto"
         app:layout_constraintTop_toBottomOf="@id/b2"
         app:layout_constraintStart_toEndOf="@id/b0"
         app:layout_constraintEnd_toStartOf="@id/bigual"
@@ -186,7 +186,7 @@
 
     <Button android:id="@+id/bigual"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="=" android:backgroundTint="#673AB7" android:onClick="igual"
+        android:text="=" android:backgroundTint="#C17B5A" android:onClick="igual"
         app:layout_constraintTop_toBottomOf="@id/b3"
         app:layout_constraintStart_toEndOf="@id/bpunto"
         app:layout_constraintEnd_toStartOf="@id/bsuma"
@@ -194,7 +194,7 @@
 
     <Button android:id="@+id/bsuma"
         android:layout_width="0dp" android:layout_height="55dp"
-        android:text="+" android:backgroundTint="#3F51B5" android:onClick="suma"
+        android:text="+" android:backgroundTint="#7B6FA0" android:onClick="suma"
         app:layout_constraintTop_toBottomOf="@id/bresta"
         app:layout_constraintStart_toEndOf="@id/bigual"
         app:layout_constraintEnd_toEndOf="parent"
@@ -207,7 +207,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="13sp"
-        android:textColor="#009688"
+        android:textColor="#5A7A8A"
         android:gravity="center"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/b0"
@@ -218,13 +218,24 @@
         android:id="@+id/btnRecuperar"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginTop="292dp"
-        android:backgroundTint="#00796B"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#5A7A8A"
         android:onClick="recuperarMemoria"
         android:text="Recuperar memoria"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bmemoria" />
+        app:layout_constraintTop_toBottomOf="@id/tvMemoria" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="← Volver"
+        android:backgroundTint="#5A7A8A"
+        android:onClick="volver"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRecuperar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

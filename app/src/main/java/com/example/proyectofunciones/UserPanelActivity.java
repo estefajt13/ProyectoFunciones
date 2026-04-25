@@ -12,7 +12,6 @@ public class UserPanelActivity extends AppCompatActivity {
     private TextView tvBienvenido;
     private AppUser usuarioActual;
 
-    // lista de contactos de la agenda — vive aquí para que sea compartida
     static ArrayList<AgendaContacto> listaContactos = new ArrayList<>();
 
     @Override
@@ -22,12 +21,14 @@ public class UserPanelActivity extends AppCompatActivity {
 
         tvBienvenido = findViewById(R.id.tvBienvenido);
 
-        // recibir el usuario que se logueó
         usuarioActual = (AppUser) getIntent().getSerializableExtra("usuario");
 
         if (usuarioActual != null) {
             tvBienvenido.setText("Hola, " + usuarioActual.getNombre() + "!");
         }
+
+        // cargar contactos guardados
+        listaContactos = Archivos.cargarContactos(this);
     }
 
     public void irCalculadora(View v) {
@@ -38,5 +39,9 @@ public class UserPanelActivity extends AppCompatActivity {
     public void irAgenda(View v) {
         Intent intent = new Intent(this, AgendaActivity.class);
         startActivity(intent);
+    }
+
+    public void cerrarSesion(View v) {
+        finish(); // regresa al MainActivity
     }
 }

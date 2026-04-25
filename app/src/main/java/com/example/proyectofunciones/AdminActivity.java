@@ -26,8 +26,7 @@ public class AdminActivity extends AppCompatActivity {
         tvListaUsuarios  = findViewById(R.id.tvListaUsuarios);
 
         // recibir la lista que viene de MainActivity
-        listaUsuarios = (ArrayList<AppUser>) getIntent()
-                .getSerializableExtra("listaUsuarios");
+        listaUsuarios = (ArrayList<AppUser>) getIntent().getSerializableExtra("listaUsuarios");
 
         if (listaUsuarios == null) {
             listaUsuarios = new ArrayList<>();
@@ -59,7 +58,7 @@ public class AdminActivity extends AppCompatActivity {
         AppUser nuevo = new AppUser(nombre, username, password);
         listaUsuarios.add(nuevo);
 
-        Toast.makeText(this, "Usuario " + username + " creado", Toast.LENGTH_SHORT).show();
+        Archivos.guardarUsuarios(this, listaUsuarios);
 
         // Limpiar campos
         etNombre.setText("");
@@ -95,5 +94,9 @@ public class AdminActivity extends AppCompatActivity {
         resultado.putExtra("listaUsuarios", listaUsuarios);
         setResult(RESULT_OK, resultado);
         super.onBackPressed();
+    }
+
+    public void volver(View v) {
+        finish(); // cierra la activity actual y regresa a la anterior
     }
 }

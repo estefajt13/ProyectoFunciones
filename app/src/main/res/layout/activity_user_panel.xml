@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:background="#F5F5F5">
+    android:background="#F2F0EB">
 
     <TextView
         android:id="@+id/tvBienvenido"
@@ -14,7 +14,7 @@
         android:text="Hola!"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#212121"
+        android:textColor="#2C2C2C"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="55dp"
         android:text="Calculadora"
         android:textSize="16sp"
-        android:backgroundTint="#2196F3"
+        android:backgroundTint="#4A6FA5"
         android:onClick="irCalculadora"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,11 +42,24 @@
         android:layout_height="55dp"
         android:text="Agenda"
         android:textSize="16sp"
-        android:backgroundTint="#673AB7"
+        android:backgroundTint="#6B8E7F"
         android:onClick="irAgenda"
         app:layout_constraintTop_toBottomOf="@id/btnCalculadora"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
+
+    <!-- Botón cerrar sesión -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Cerrar Sesión"
+        android:backgroundTint="#5A7A8A"
+        android:onClick="cerrarSesion"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAgenda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

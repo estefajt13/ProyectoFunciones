@@ -96,16 +96,21 @@ public class AgendaActivity extends AppCompatActivity {
                     (AgendaContacto) data.getSerializableExtra("contacto");
 
             if (requestCode == 1) {
-                // nuevo contacto
                 UserPanelActivity.listaContactos.add(contacto);
             } else if (requestCode == 2) {
-                // modificar contacto existente
                 int posicion = data.getIntExtra("posicion", -1);
                 if (posicion >= 0) {
                     UserPanelActivity.listaContactos.set(posicion, contacto);
                 }
             }
+
+            // guardar en archivo cada vez que cambia la lista
+            Archivos.guardarContactos(this, UserPanelActivity.listaContactos);
             actualizarLista();
         }
+    }
+
+    public void volver(View v) {
+        finish(); // cierra la activity actual y regresa a la anterior
     }
 }
